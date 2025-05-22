@@ -1,13 +1,11 @@
-version: '3'
-
 services:
   db:
-    image: postgres:14.3
+    image: postgres
     restart: always
     ports:
-      - '5432:5432'
+      - "5432:5432"
     environment:
-      POSTGRES_PASSWORD: PASS 
+      POSTGRES_PASSWORD: PASS
       POSTGRES_DB: NAME
     container_name: crud_db
     volumes:
